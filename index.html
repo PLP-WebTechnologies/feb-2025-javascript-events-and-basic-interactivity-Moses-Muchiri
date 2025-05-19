@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JS Event Playground 🎮</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header>
+    <h1>JS Playground 🕹️</h1>
+    <p>Hover, click, type... and watch the magic happen!</p>
+  </header>
+
+  <main>
+    <!-- Event Buttons -->
+    <section class="event-buttons">
+      <button id="clickBtn">Click Me!</button>
+      <button id="hoverBtn">Hover Over Me!</button>
+      <button id="colorBtn">Change My Color 🎨</button>
+      <input type="text" id="keyInput" placeholder="Type something...">
+    </section>
+
+    <!-- Secret Double Click -->
+    <section class="secret">
+      <button id="secretBtn">Double Click Me 🤫</button>
+      <p id="secretMessage" class="hidden">We Mzee!!</p>
+    </section>
+
+    <!-- Interactive Tabs -->
+    <section class="tabs">
+      <div class="tab-buttons">
+        <button class="tab active" data-tab="1">Tab 1</button>
+        <button class="tab" data-tab="2">Tab 2</button>
+        <button class="tab" data-tab="3">Tab 3</button>
+      </div>
+      <div class="tab-content" id="tab1">This is Tab 1 content with a fade-in effect.</div>
+      <div class="tab-content hidden" id="tab2">Hello from Tab 2 with a smooth transition!</div>
+      <div class="tab-content hidden" id="tab3">You made it to Tab 3! Now animated!</div>
+    </section>
+
+    <!-- Image Gallery -->
+    <section class="gallery">
+      <h2>Pexels Gallery 🖼️</h2>
+      <div class="image-container">
+        <img src="https://images.pexels.com/photos/414612/pexels-photo-414612.jpeg" alt="Scenery" />
+        <img src="https://images.pexels.com/photos/34950/pexels-photo.jpg" alt="Forest" />
+        <img src="https://images.pexels.com/photos/210186/pexels-photo-210186.jpeg" alt="Mountains" />
+        <img src="https://images.pexels.com/photos/417173/pexels-photo-417173.jpeg" alt="City" />
+        <img src="https://images.pexels.com/photos/572897/pexels-photo-572897.jpeg" alt="Beach" />
+      </div>
+    </section>
+
+    <!-- Form Section -->
+    <section class="form-section">
+      <h2>Signup Form </h2>
+      <form id="signupForm" novalidate>
+        <input type="text" id="name" placeholder="Name" required>
+        <span class="error" id="nameError"></span>
+
+        <input type="email" id="email" placeholder="Email" required>
+        <span class="error" id="emailError"></span>
+
+        <input type="password" id="password" placeholder="Password (min 8 chars)" required>
+        <span class="error" id="passwordError"></span>
+
+        <button type="submit">Sign Up</button>
+      </form>
+    </section>
+  </main>
+</body>
+</html>

@@ -1,0 +1,111 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to right, #ece9e6, #ffffff);
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+header {
+  background: #6a11cb;
+  background: linear-gradient(to right, #2575fc, #6a11cb);
+  color: white;
+  padding: 2rem;
+  text-align: center;
+  border-bottom: 5px solid #444;
+}
+
+main {
+  padding: 2rem;
+}
+
+button {
+  margin: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 10px;
+  background: #2575fc;
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background: #6a11cb;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  display: block;
+  margin: 0.5rem 0;
+  padding: 0.5rem;
+  width: 100%;
+  max-width: 300px;
+  font-size: 1rem;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+}
+
+.error {
+  color: red;
+  font-size: 0.9rem;
+}
+
+.hidden {
+  display: none;
+}
+
+.image-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.image-container img {
+  width: 180px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.image-container img:hover {
+  transform: scale(1.1);
+}
+
+.tabs {
+  margin: 2rem 0;
+}
+
+.tab-buttons {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.tab {
+  background: #eee;
+  color: #333;
+}
+
+.tab.active {
+  background: #2575fc;
+  color: white;
+}
+
+.tab-content {
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background: #f9f9f9;
+  transition: all 0.5s ease-in-out;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
